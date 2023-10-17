@@ -5,6 +5,7 @@ import "./../App.css";
 
 function AllBeersPage() {
   const [beers, setBeers] = useState(null);
+
   const [newquery, setNewquery] = useState("");
   const [search, setSearch] = useState(null);
   const [searchOn, setSearchOn] = useState(false);
