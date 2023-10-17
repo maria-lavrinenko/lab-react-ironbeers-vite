@@ -1,8 +1,11 @@
 import "./../App.css";
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function AddBeerPage() {
+  const navigate = useNavigate();
+
   const [name, setName] = useState("");
   const [tagline, setTagline] = useState("");
   const [description, setDescription] = useState("");
@@ -37,6 +40,7 @@ function AddBeerPage() {
         newBeer
       );
       console.log(response.data);
+      navigate("/");
     } catch (error) {
       console.log(error);
     }

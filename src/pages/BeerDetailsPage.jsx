@@ -26,7 +26,7 @@ function BeerDetailsPage() {
   }, [beerId]);
 
   if (!oneBeer) {
-    return "Beer is serving...";
+    return "Beer is being served...";
   }
 
   return (
